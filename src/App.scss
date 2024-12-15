@@ -1,0 +1,28 @@
+.main {
+  &__wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 12px;
+    padding: 12px;
+  }
+
+  &__task {
+    grid-area: 1 / 1 / span 2 / 1;
+    height: 100%;
+  }
+
+  &__output {
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 960px) {
+  .main {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}

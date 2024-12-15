@@ -1,0 +1,33 @@
+.code-editor {
+  &__wrapper {
+    display: grid;
+    grid-row-gap: 12px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__mode-selector {
+    display: grid;
+    grid-row-gap: 4px;
+
+    &_label {
+      font-size: 16px;
+    }
+  }
+
+  &__editor {
+    grid-area: 2 / 1 / 2 / span 2;
+  }
+
+  &__run-button {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    justify-self: flex-end;
+    background-color: #06ea06;
+    color: white;
+    border: none;
+    width: max-content;
+    padding: 12px 24px;
+    border-radius: 8px;
+  }
+}
